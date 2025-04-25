@@ -1,0 +1,558 @@
+.club-container-cubing {
+  width: 88.7vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Club Content */
+.club-content-cubing {
+  max-width: 500px;
+  margin-top: 13%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.club-header-cubing {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.club-logo-cubing {
+  background: white;
+  color: black;
+  padding: 30px 10px;
+  border-radius: 50%;
+  margin-top: 8%;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.club-title-cubing {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 8%;
+  color: #ff8c00;
+}
+
+.club-content-cubing p {
+  font-size: 20px;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+/* Team Section */
+.team-circle-cubing {
+  position: absolute;
+  bottom: 30%;
+  left: 65%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.team-member-cubing {
+  transform: translate(330px, -220px);
+}
+
+.team-member-cubing.member1-cubing {
+  transform: translate(-80px, -80px);
+}
+
+.team-member-cubing.member2-cubing {
+  transform: translate(150px, -80px);
+}
+
+.team-member-cubing.member3-cubing {
+  transform: translate(-130px, 140px);
+}
+
+.team-member-cubing.member4-cubing {
+  transform: translate(-560px, 140px);
+}
+
+/* Member Images */
+.member-image-cubing {
+  width: 190px;
+  height: 160px;
+  background-color: lightgray;
+  object-fit: cover;
+  border-radius: 25% 0% 25% 0%;
+  border: 3px solid white;
+}
+
+/* Role and Name */
+.role-cubing {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.member-name-cubing {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.legacy-holders-section-cubing {
+  margin-top: 40px;
+  padding: 10px;
+  color: black;
+  margin-left: 15%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.legacy-title-cubing {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  color: #d35400;
+  margin-right: 17%;
+}
+
+.legacy-grid-cubing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10%;
+  margin-right: 15%;
+}
+
+.legacy-card-cubing {
+  background: #f4f4f4;
+  padding: 54px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.legacy-name-cubing {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.legacy-role-cubing {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+/* Show More Button (renamed to Previous Conveners) */
+.show-more-button-cubing {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.show-more-button-cubing:hover {
+  background-color: #007bff;
+  transform: scale(0.95);
+}
+
+.show-more-button-cubing:active {
+  background-color: #007bff;
+  transform: scale(0.95);
+}
+
+/* Popup Button */
+.core-members-popup-button-cubing {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.core-members-popup-button-cubing:hover {
+  background-color: #007bff;
+  transform: scale(0.95);
+}
+
+.core-members-popup-button-cubing:active {
+  background-color: #007bff;
+  transform: scale(0.95);
+}
+
+/* Popup Modal */
+.core-members-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.core-members-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.core-members-popup-scrollable {
+  max-height: 60vh;
+  overflow-y: auto;
+  /* Maintain vertical scrolling */
+}
+
+.core-members-year-section {
+  margin-bottom: 20px;
+  position: relative;
+  /* Positioning context for sticky h3 */
+}
+
+.core-members-year-section h3 {
+  font-size: 1.5em;
+  color: #d35400;
+  margin-bottom: 10px;
+  position: sticky;
+  /* Sticky to stay in place */
+  left: 0;
+  /* Stick to the left edge */
+  background: white;
+  /* Prevent content overlap */
+  z-index: 10;
+  /* Ensure it stays above other content */
+  padding: 5px 10px;
+  /* Optional: Improve appearance */
+  display: inline-block;
+  /* Take only necessary width */
+}
+
+.core-members-member-grid {
+  display: grid;
+  gap: 15px;
+  overflow-x: auto;
+  /* Enable horizontal scrolling for members */
+  white-space: nowrap;
+  /* Prevent wrapping for horizontal scroll */
+  padding-bottom: 10px;
+  /* Optional: Space for scrollbar */
+}
+
+.core-members-member-card {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  display: inline-block;
+  /* Align cards horizontally */
+  vertical-align: top;
+  /* Align tops of cards */
+}
+
+.core-members-member-image-popup {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #28a745;
+}
+
+.core-members-member-info {
+  margin-top: 10px;
+}
+
+.core-members-member-name-popup {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.core-members-member-role-popup {
+  font-size: 0.9em;
+  color: #555;
+}
+
+@media screen and (min-width: 2200px) {
+  .team-circle-cubing {
+    bottom: 18%;
+  }
+  .club-content-cubing {
+    margin-left: 10%;
+}
+}
+
+
+@media screen and (min-width: 1700px) {
+  .team-circle-cubing {
+    bottom: 14%;
+  }
+  /* .club-content-cubing {
+    margin-left: 10%;
+} */
+}
+
+@media screen and (max-width: 1500px) {
+  .team-circle-cubing {
+    bottom: 20%;
+  }
+}
+
+/* Responsive Grid for Members */
+@media screen and (min-width: 1024px) {
+  .core-members-member-grid {
+    grid-template-columns: repeat(7, 1fr);
+    /* 4 columns on wide laptop screens */
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .core-members-member-grid {
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columns on tablets */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .core-members-member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on phones */
+  }
+
+  .core-members-member-card {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .core-members-member-image-popup {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.close-button {
+  display: block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.close-button:active {
+  background-color: #bd2130;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1800px) {
+  .club-content-cubing {
+    margin-left: 0%;
+  }
+}
+/* Existing Media Queries */
+@media screen and (max-width: 1400px) {
+  .club-content-cubing {
+    margin-top: 12%;
+    margin-left: 0%;
+  }
+  
+
+  .club-container-cubing {
+    align-items: center;
+  }
+
+  .team-circle-cubing {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .team-member-cubing {
+    transform: none;
+    position: static;
+    text-align: center;
+  }
+
+  .team-member-cubing {
+    transform: none
+  }
+
+  .team-member-cubing.member1-cubing {
+    transform: none
+  }
+
+  .team-member-cubing.member2-cubing {
+    transform: none
+  }
+
+  .team-member-cubing.member3-cubing {
+    transform: none
+  }
+
+  .team-member-cubing.member4-cubing {
+    transform: none
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .team-circle-cubing {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .club-content-cubing,
+  .legacy-holders-section-cubing {
+    text-align: center;
+  }
+
+  .legacy-holders-section-cubing {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .club-title-cubing {
+    font-size: 30px;
+  }
+
+  .club-content-cubing {
+    margin-top: 20%;
+  }
+
+  .club-content-cubing p {
+    font-size: 16px;
+  }
+
+  .member-image-cubing {
+    width: 120px;
+    height: 100px;
+  }
+
+  .legacy-card-cubing {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .legacy-title-cubing {
+    margin-bottom: 5%;
+  }
+
+  .team-circle-cubing {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .club-title-cubing {
+    font-size: 24px;
+  }
+
+  .club-content-cubing {
+    margin-top: 34%;
+  }
+
+  .club-content-cubing p {
+    font-size: 14px;
+  }
+
+  .member-image-cubing {
+    width: 200px;
+    height: 200px;
+  }
+
+  .legacy-card-cubing {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .legacy-title-cubing {
+    margin-bottom: 10%;
+  }
+
+  .legacy-holders-section-cubing {
+    margin-top: 292%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .club-title-cubing {
+    font-size: 24px;
+  }
+
+  .club-content-cubing {
+    margin-top: 34%;
+  }
+
+  .club-content-cubing p {
+    font-size: 14px;
+  }
+
+  .member-image-cubing {
+    width: 200px;
+    height: 200px;
+  }
+
+  .legacy-card-cubing {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .legacy-title-cubing {
+    margin-bottom: 10%;
+  }
+
+  .legacy-holders-section-cubing {
+    margin-top: 330%;
+  }
+}

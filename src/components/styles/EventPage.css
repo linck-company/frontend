@@ -1,0 +1,400 @@
+/* EventPage.css */
+
+/* Content wrapper */
+.club_content {
+  flex: 1;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items to prevent left bias */
+  box-sizing: border-box; /* Ensures padding is included in the width/height */
+  margin-bottom: 10%;
+}
+
+.club_activites_page-container {
+  margin-top: 5%;
+  padding: 0 10px; /* Padding for small screens */
+  margin-left: auto; /* Center on large screens */
+  margin-right: auto; /* Center on large screens */
+  width: 98.6vw;
+}
+
+/* Navbar Header */
+.navbar-header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Main Content Section with Background */
+.main-content {
+  text-align: center;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px 40px;
+  border-radius: 10px;
+  background-color: #2a2a3a;
+  position: relative;
+  color: #fff;
+  width: 98%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-content h2 {
+  font-size: 24px;
+  color: #ffd700;
+  margin: 10px 0 20px;
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Categories Section */
+.categories-section {
+  margin-bottom: 6%;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories-section h3 {
+  font-size: 20px;
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image and text horizontally */
+  position: relative; /* For precise positioning if needed */
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category.selected {
+  border: 2px solid #ff7f50;
+  border-radius: 10px;
+}
+
+.category-image {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: -40px; /* Overlap the image above the text */
+  background-size: cover; /* Ensure the image fills the circle */
+  background-position: center; /* Center the image within the circle */
+  z-index: 1; /* Ensure the image stays above the text */
+}
+
+.category p {
+  font-size: 14px;
+  color: white;
+  background-color: #2a2a3a; /* Match the background to avoid text overlap issues */
+  padding: 10px 20px; /* Add padding to create a text box */
+  border-radius: 10px; /* Match the card style */
+  margin-top: 50px; /* Remove default margin to control positioning */
+}
+
+/* Events Section */
+.events-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 80px;
+  max-width: 1200px;
+  justify-content: center; /* Center the grid to prevent right shift */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-card {
+  background-color: #2a2a3a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 286px; /* Fixed width for consistency */
+  min-height: 350px; /* Use min-height for flexibility */
+}
+
+.event-image-placeholder {
+  background-color: #3a3a4a;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-icon {
+  font-size: 40px;
+}
+
+.event-details {
+  padding: 15px;
+}
+
+.event-category {
+  font-size: 12px;
+  color: #ff7f50;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.event-date {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.event-details h4 {
+  font-size: 16px;
+  color: white;
+  margin: 5px 0;
+  min-height: 40px;
+}
+
+.event-venue,
+.event-time,
+.event-interested {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 5px 0;
+  margin-bottom: 15px;
+}
+
+.join-button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px; 
+  align-self: center;
+  margin-left: 35%;
+}
+
+.join-button:hover {
+  background-color: #e06b40;
+}
+
+.event-filter-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center;
+  transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+  background-color: #e66c43; /* Slightly darker shade for hover */
+}
+
+.filter-button.active {
+  background-color: #d95f3a; /* Darker shade for active state */
+  border: 1px solid #fff; /* White border to highlight active */
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.join-button:hover {
+  background-color: #e66c43; /* Slightly darker shade for hover */
+}
+
+.join-button.deregister {
+  background-color: #dc3545; /* Red for deregister state */
+  border: 1px solid #fff; /* White border to highlight */
+}
+
+.join-button.deregister:hover {
+  background-color: #c82333; /* Darker red for hover */
+}
+
+.join-button:disabled {
+  background-color: #cccccc; /* Grey for disabled (completed events or loading) */
+  color: #666666;
+  cursor: not-allowed;
+  border: none;
+  opacity: 0.7; /* Slightly transparent to emphasize disabled state */
+}
+
+@media (max-width: 1400px) {
+  .club_activites_page-container {
+    padding: 0;
+  }
+
+  .event-details {
+    width: 92%; /* More space on large screens */
+  }
+}
+
+@media (max-width: 1399px) {
+  .main-content {
+    margin-left: 0%;
+    width: 88%;
+    margin-right: 0%;
+    display: block;
+  }
+  .events-section {
+    grid-template-columns: repeat(auto-fit, minmax(286px, 1fr));
+  }
+}
+
+@media (max-width: 1300px) {
+  .club_content {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .club_content {
+    width: 80%;
+    margin-left: 4%;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .club_content {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .events-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
+  .event-card {
+    width: 254px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .events-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+  .events-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .event-card {
+    width: 250px;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .club_content {
+    padding: 10px;
+  }
+
+  .events-section {
+    max-width: 160px;
+  }
+
+  .event-card {
+    width: 200px;
+    min-height: 250px;
+  }
+
+  .main-content h1 {
+    font-size: 28px;
+  }
+
+  .main-content h2 {
+    font-size: 18px;
+  }
+
+  .categories-section h3 {
+    font-size: 18px;
+  }
+
+  .category-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: -30px; /* Adjusted for smaller screens */
+  }
+
+  .category p {
+    font-size: 12px;
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+  }
+}

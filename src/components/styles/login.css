@@ -1,0 +1,360 @@
+@import './variables.css';
+
+/* Login container */
+.login-container h1 {
+  font-size: var(--heading-font-size); /* Heading font size */
+  color: var(--primary-color); /* Set color */
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'JetBrains Mono'; /* Add margin below heading */
+}
+
+.login-container p {
+  font-size: 16px; /* Heading font size */
+  color: var(--primary-color); /* Set color */
+  margin-bottom: 15px;
+  text-align: center; /* Add margin below heading */
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: var(--margin); /* Spacing between fields */
+}
+
+.input-group label {
+  font-size: 15px;
+  color: #d4d4d4;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Input placeholder */
+.input-group input::placeholder {
+  color: #e3d1d1;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;/* Add spacing between checkbox */
+}
+
+.remember-me label {
+  font-size: var(--paragraph-font-size);
+  color: aliceblue;
+  margin-left: 8px; /* Space between checkbox and label */
+}
+
+.login-button {
+  background: linear-gradient(90deg, #221EBF 0%, #100E59 100%);
+  color: var(--primary-color);
+  padding: 3%; /* Padding from variables */
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px;
+  cursor: pointer;
+  width: 80%; /* Make button stretch the container's width */
+  display: block; /* Ensures margin auto works properly */
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+.forgot-password {
+  display: block;
+  margin-top: var(--margin); /* Add margin to separate from button */
+  color: var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.signup-link {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: var(--margin);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex; /* Use flexbox for row layout */
+  justify-content: center; /* Centers the content horizontally */
+  gap: 20px; /* Adjusts space between the links */
+  padding: 10px 0; /* Optional padding for spacing around the footer */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+
+.footer-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* Adjust to your preferred color */
+  font-size: 14px; /* Adjust size as needed */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Adds underline on hover for better UX */
+  color: black;
+}
+
+/* New styles for password wrapper and show password button */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Space for the button */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.show-password-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color); /* Match existing color scheme */
+  padding: 5px;
+  font-size: 14px; /* Adjust icon size */
+}
+
+.show-password-button:hover {
+  color: var(--accent-color); /* Match hover color scheme */
+}
+
+@media (max-width: 1200px) {
+  .login-container {
+    width:auto;
+    right: 6%;
+  }
+
+}
+
+
+
+
+@media (max-width: 992px) {
+  .login-container {
+    position: static;
+    transform: none;
+    margin-left: 0%;
+    padding: 20px;
+    max-width: 90%;
+    width: auto;
+    flex: 0;
+}
+}
+
+@media(max-width:890px)
+{
+  .login-container p {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .login-container {
+    position: static;
+    transform: none;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 90%;
+    width: auto;
+    flex:0;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .login-container p {
+    font-size: 14px;
+  }
+  
+  .login-container label {
+    font-size: 13px;
+  }
+  
+  .login-container input::placeholder {
+    font-size: 12px;
+  }
+  
+  .login-container a {
+    font-size: 13px;
+  }
+  
+  .login-container .footer-links a {
+    font-size: 10px;
+  }
+  
+  .login-container .login-button {
+    font-size: 14px;
+  }
+
+  .login-container h1{
+    font-size: 32px;
+  }
+}
+
+
+@media (max-width: 742px) and (min-width: 738px) and (max-height: 362px) and (min-height: 358px) {
+
+  .login-container{
+    max-width: 128%;
+  }
+  
+  .input-group input {
+    padding: 8px;
+
+  }
+  .login-container p {
+    margin-bottom: 0px;
+}
+  
+
+  }
+
+
+@media (max-width: 680px) {
+  .login-container {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    position: absolute;
+    top: -2%;
+    left: 56%;
+    transform: translateX(-60%);
+  }
+  .login-container h1 {
+    margin-bottom: 8px;
+  }
+  /* .ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(10%); 
+    left: calc(20%); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  } */
+}
+
+@media(max-width:600px)
+{
+  .login-container{
+    top:2%;
+    left:59%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+    left: 0%;
+    transform: translateX(-12%);
+    margin-left: 12%;
+    margin-top: -27%;
+  }
+
+  .login-container p {
+    font-size: 14px;
+  }
+  
+  .login-container label {
+    font-size: 13px;
+  }
+  
+  .login-container input::placeholder {
+    font-size: 12px;
+  }
+  
+  .login-container a {
+    font-size: 13px;
+  }
+  
+  .login-container .footer-links a {
+    font-size: 12px;
+  }
+  
+  .login-container .login-button {
+    font-size: 14px;
+  }
+  
+
+  .login-container h1{
+    font-size: 32px;
+  }
+
+  .login-button {
+    font-size: 1.2rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers content */
+    text-align: center;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .footer-links a {
+    flex: 1 1 45%; /* Makes sure items take up around half the width */
+    min-width: 120px; /* Ensures wrapping when space is tight */
+  }
+
+  .signup-text {
+    text-align: center;
+    margin-top: 12px;
+    color: var(--primary-color);
+  }
+
+}
+
+@media (max-width: 450px) {
+  .login-container {
+    margin-top: 8%;
+    width: 92%;
+    margin-left: 16%;
+
+  }
+  
+}
+
+
+
+@media (max-width: 380px) {
+  .login-container {
+    margin-top: -4%;
+    width:90%;
+    margin-left: 16%;
+
+  }
+}
+
+

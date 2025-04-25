@@ -1,0 +1,199 @@
+
+  /* DesignPage.css */
+.dashboard-container {
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  margin-top: 10%;
+  box-sizing: border-box;
+  padding-bottom: 2rem !important; /* Ensure space for margin */
+  overflow: auto; /* Prevent margin collapse */
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.event-lineup{
+  margin-bottom: 10%;
+}
+
+.stats-section .stats-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  color: black;
+}
+
+.stat-card {
+  flex: 1 1 calc(50% - 1rem);
+  background: #e8f0fa;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 120px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: clamp(12px, 3vw, 14px);
+  color: #555;
+}
+
+.stat-card h3 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #007bff;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.section-header span {
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+.registered-events .event-cards,
+.event-lineup .event-lineup-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.event-des-card,
+.lineup-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  min-width: 250px;
+}
+
+.event-image,
+.image-placeholder {
+  background: #ccc;
+  height: 120px;
+  border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.event-label {
+  background: orange;
+  display: inline-block;
+  padding: 2px 8px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-size: clamp(10px, 2.5vw, 12px);
+  font-weight: bold;
+  color: white;
+}
+
+.event-dash-details,
+.lineup-details {
+  margin-top: 0.5rem;
+}
+
+.event-dash-details h4,
+.lineup-details h4 {
+  margin: 0;
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+
+.orange-text {
+  color: orange;
+}
+
+.lineup-note {
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: white;
+  font-size: clamp(12px, 3vw, 14px);
+}
+
+
+/* Large devices (desktops, 992px and above) */
+@media (max-width: 992px) {
+  .dashboard-container {
+    padding: 2rem;
+    margin-top: 12%;
+  }
+
+  .stat-card {
+    flex: 1 1 calc(25% - 1rem);
+  }
+
+  /* .event-des-card,
+  .lineup-card {
+    flex: 1 1 calc(33.33% - 1rem);
+  } */
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .stat-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
+  .event-des-card,
+  .lineup-card {
+    flex: 1 1 calc(50% - 1rem);
+    width:75px;
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+}
+/* Small devices (phones, 576px and below) */
+@media (max-width: 640px) {
+  .dashboard-container {
+    padding: 0.5rem;
+    margin-top: 36%;
+  }
+
+  .stats-section .stats-cards {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .stat-card {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .event-des-card,
+  .lineup-card {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .event-image,
+  .image-placeholder {
+    height: 100px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and below) */
+
+

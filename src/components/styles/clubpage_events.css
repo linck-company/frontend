@@ -1,0 +1,151 @@
+
+/* Image Section */
+.club-image {
+  width: 25%;
+  min-height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1.5px solid grey;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  top: 24%;
+  left: 68%;
+}
+
+.club-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Club Content */
+.club_activites_page-content {
+  max-width: 700px;
+  position: relative;
+  margin-top: 10%;
+  margin-left: -80%;
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+/* Club Header */
+.club_activites_page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Title Styling */
+.club_activites_page-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e67e22;
+  text-align: center;
+}
+
+.activities-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+/* Text Content */
+.club_activites_page-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  .club-image {
+    position: static;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    margin-top: 150px;
+  }
+
+  .club_activites_page-title {
+    font-size: 40px;
+  }
+
+  .club_activites_page-content {
+    max-width: 90%;
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .club_activites_page-title {
+    font-size: 36px;
+  }
+
+  .activities-title {
+    font-size: 32px;
+  }
+
+  .club_activites_page-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .club_activites_page-content {  
+    margin-top: 6%;
+  }
+  
+
+  .club-image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .club_activites_page-title {
+    font-size: 30px;
+  }
+
+  .activities-title {
+    font-size: 26px;
+  }
+
+  .club_activites_page-content p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .club-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .club_activites_page-title {
+    font-size: 26px;
+  }
+
+  .activities-title {
+    font-size: 22px;
+  }
+
+  .club_activites_page-content p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .club-image {
+    width: 80%;
+    margin-top: 100px;
+  }
+  .club_activites_page-content {
+    max-width: 90%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+  }
+}

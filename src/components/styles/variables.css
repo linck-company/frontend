@@ -1,0 +1,22 @@
+:root {
+    /* Color Palette */
+    --primary-color: white;   /* Blue */
+    --secondary-color: #6C757D; /* Gray */
+    --accent-color: #fc2424e3;    /* Orange */
+    --background-color: #3F5FB0; /* Light gray background */
+    --text-color: white;      /* Dark text */
+    --link-color: var(--primary-color);
+  
+    /* Typography */
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+    --heading-font-size: 2rem;
+    --paragraph-font-size: 1rem;
+  
+    /* Spacing */
+    --padding: 10px;
+    --margin: 10px;
+  
+    /* Borders */
+    --border-radius: 8px;
+    --border-color: #DEE2E6;
+  }

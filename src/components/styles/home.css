@@ -1,0 +1,100 @@
+/* General Page Styles */
+.homepage-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Content Section */
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Text Section */
+.text-section {
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Subtext */
+.subtext {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Illustration */
+.illustration img {
+    margin-top: 8%;
+    width: 450px;
+    max-width: 100%;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .text-section {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-content {
+        margin-top: 18%;
+    }
+    .text-section {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        margin-top: 20%;
+    }
+    .text-section {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile View - Image on Top */
+@media (max-width: 680px) {
+    .home-content {
+        flex-direction: column-reverse; /* Moves the image above the text */
+        text-align: center;
+        margin-top: 28%;
+        margin-bottom: 30%;
+    }
+
+    .illustration img {
+        width: 250px; /* Adjust image size */
+        margin-bottom: 20px;
+    }
+
+    .text-section {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-content {
+        margin-top: 25%;
+    }
+    .text-section {
+        font-size: 1.1rem;
+    }
+}

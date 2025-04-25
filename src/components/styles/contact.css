@@ -1,0 +1,88 @@
+.contact-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-modal-overlay {
+    background: transparent;
+  }
+  
+  .contact-modal-box {
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .contact-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .contact-modal-title {
+    font-size: 24px;
+    margin-bottom: 28px;
+    text-align: center;
+    color: black;
+  }
+  
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color:black;
+  }
+  
+  .contact-input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contact-input-field.contact-disabled {
+    background-color: #f0f0f0;
+  }
+  
+  .contact-error-message {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .contact-submit-button {
+    padding: 10px;
+    background: linear-gradient(to right, #0f2a5e, #a4c3e3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-submit-button:hover {
+    background: #0f2a5e;
+  }
+  

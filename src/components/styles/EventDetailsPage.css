@@ -1,0 +1,233 @@
+/* Mobile-first approach: Default styles for small screens */
+
+.event-container {
+  display: flex;
+  flex-direction: row; /* Switch to side-by-side on tablets and desktops */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.club_activites_det_page-container {
+  margin-top: 6%;
+  padding: 0 10px; /* Padding for small screens */
+  margin-left: auto; /* Center on large screens */
+  margin-right: auto; /* Center on large screens */
+  width: 98.6vw;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.club-poster {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.poster-placeholder {
+  width: 100%;
+  height: 200px; /* Adjusted for mobile */
+  background-color: #34495e;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:15px;
+}
+
+.event-details {
+  flex: 2;
+  padding: 20px;
+}
+
+.event-details h1 {
+  font-size: 2em; /* Smaller for mobile */
+  margin-bottom: 10px;
+}
+
+.event-title-highlight {
+  color: #e67e22;
+}
+
+.event-date {
+  font-size: 0.9em;
+  color: #bdc3c7;
+}
+
+.event-details h2 {
+  font-size: 1.2em; /* Smaller for mobile */
+  margin-top: 20px;
+}
+
+.location-address {
+  color: #e67e22;
+}
+
+.chief-guest {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px; /* Space between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 20px; /* Add some space above the buttons */
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between Contact and Follow buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 10px; /* Add some space above the button group */
+}
+
+.btn {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 8px 15px; /* Original padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Original font size */
+  width: 150px; /* Original full width on mobile */
+  margin-bottom: 10px; /* Space between buttons */
+}
+
+.btn:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.btn-conatct {
+  background-color: #e67e22;
+  color: #fff;
+  width: 150px; /* Fixed width to match the longer "Take Attendance" text */
+  padding: 8px 15px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+}
+
+.btn-follow {
+  background-color: #e67e22;
+  color: #fff;
+  width: 150px; /* Fixed width to match the longer "Take Attendance" text */
+  padding: 8px 15px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+  height: 35px;
+}
+
+/* Specific styles for Take Attendance and Close Event buttons */
+.btn-attendance {
+  background-color: #e67e22;
+  color: #fff;
+  width: 150px; /* Fixed width to match the longer "Take Attendance" text */
+  padding: 8px 15px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+}
+
+.btn-close {
+  background-color: #e67e22;
+  color: #fff;
+  width: 150px; /* Fixed width to match the longer "Take Attendance" text */
+  padding: 8px 15px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+  height: 36px;
+}
+
+/* Media Queries for Larger Screens */
+@media (max-width: 1000px) {
+  .club_activites_det_page-container {
+    padding: 0 20px;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    margin-top: 12%;
+  }
+
+  .sidebar {
+    order: 1; /* Move sidebar to the right */
+  }
+
+  .club-poster {
+    margin-bottom: 0;
+  }
+
+  .poster-placeholder {
+    height: 300px; /* Larger poster on desktop */
+  }
+
+  .event-details {
+    margin-top: 0; /* Remove margin-top on desktop */
+  }
+
+  .event-details h1 {
+    font-size: 2.5em; /* Larger for desktop */
+  }
+
+  .event-details h2 {
+    font-size: 1.5em; /* Larger for desktop */
+  }
+
+  .btn {
+    width: auto; /* Reset to default width */
+    padding: 10px 20px; /* Original padding */
+    font-size: 1em; /* Original font size */
+    margin-right: 10px;
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons */
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: center; /* Center buttons */
+  }
+
+  .btn-attendance,
+  .btn-close {
+    width: 150px; /* Fixed width on mobile to match */
+    padding: 10px 20px; /* Match desktop padding */
+    font-size: 1em; /* Match desktop font size */
+  }
+}
+
+@media (max-width: 700px) {
+  .club_activites_det_page-container {
+    padding: 0 20px;
+  }
+
+  .event-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    margin-top: 16%;
+  }
+}
+
+/* Media Query for Screens Less Than 700px */
+@media (max-width: 600px) {
+  .event-details {
+    margin-top: 12%; /* Increase margin-top to 20% on screens below 700px */
+  }
+  .event-container {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .event-container {
+    margin-top: 16%;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+}
